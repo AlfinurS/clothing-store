@@ -1,1 +1,2 @@
 # clothing-store
+Учебный проект
