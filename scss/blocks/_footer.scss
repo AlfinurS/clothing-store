@@ -1,0 +1,133 @@
+.advantage {
+  background-color: $black-color;
+  max-height: 340px;
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 72px;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-top: 103px;
+    min-height: 230px;
+  }
+  &__delivery {
+    text-align: center;
+  }
+  &__sales {
+    text-align: center;
+  }
+  &__assurance {
+    text-align: center;
+  }
+  &__titel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white-color;
+    padding-top: 28px;
+    padding-bottom: 16px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: $white-color;
+  }
+}
+.footer  {
+  &__subscribe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 448px;
+    background-image: url(../img/banner_footer.png);
+  }
+  &__content {
+    width: 50%;
+    text-align: center;
+    &-wrap {
+      max-width: 360px;
+      padding-left: 230px;
+      padding-top: 97px;
+    }
+  }
+  &__foto {
+    padding-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $black-color;
+  }
+  &__sub {
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+  }
+  &__titel {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: $black-color;
+  }
+  &__headline {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 32px;
+    color: $black-color;
+  }
+  &__form {
+    min-height: 49px;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.2s;
+    max-width: 330px;
+    margin-left: 234px;
+  }
+  &__email {
+    padding-left: 24px;
+    padding-right: 68px;
+    border: none;
+    background-color: $grey_bg-color;
+    border-radius: 25px 0 0 25px;
+  }
+  &__button {
+    min-width: 100px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    background-color:$pink_text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink-color;
+  }
+  &__holder {
+    background-color: $black-color;
+    &-text {
+      color: $white-color;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 80px;
+      padding-left: 230px;
+      padding-right: 230px;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-of-type) {
+    margin:0 7px 0 0;
+  }
+}
