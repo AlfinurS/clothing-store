@@ -1,0 +1,209 @@
+.promo {
+  display: flex;
+
+  &__picture {
+    width: 50%;
+    height: auto;
+  }
+  &__content {
+    width: 50%;
+    background-color: $pink-color;
+    display: flex;
+    align-items: center;
+    &-headline {
+      position: relative;
+    }
+    &-headline::before {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 100%;
+      background-color: $pink_text-color;
+      left: -28px;
+    }
+    &-titel {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 58px;
+      text-transform: uppercase;
+      color: $black-color;
+    }
+    &-all {
+      padding-left: 92px;
+    }
+  }
+  &__text {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: $black-color;
+    &--pink {
+      color: $pink_text-color;
+    }
+  }
+}
+
+.stock {
+  margin-top: 63px;
+  margin-bottom: 98px;
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  &__card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white-color;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    &--women {
+      background-image: url(../img/banner_mini1.png);
+    }
+    &--men {
+      background-image: url(../img/banner_mini2.png);
+    }
+    &--kids {
+      background-image: url(../img/banner_mini3.png);
+    }
+    &--accesories {
+    grid-column: 1/4;
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 180px;
+  }
+  }
+  &__pink {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 19px;
+    color: $pink_text-color;
+  }
+}
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px;
+  &__item {
+    background-color: $grey_bg-color;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1140px;
+  }
+  &__content {
+    max-width: 360px;
+    margin-top: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    &-name {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: $black-color;
+    }
+    &-text {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+      color: $grey-color;
+    }
+    &-price {
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $pink_text-color;
+    }
+  }
+  &__headline {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black-color;
+    margin-bottom: 6px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $grey-color;
+    margin-bottom: 48px;
+  }
+  &__button {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    color: $pink_text-color;
+    border: 1px solid $pink_text-color;
+    width: 212px;
+    margin-top: 48px;
+  }
+}
+  .advantage {
+  background-color: $black-color;
+  display: flex;
+  justify-content: center;
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 72px;
+    min-height: 340px;
+    max-width: 1140px;
+  }
+  &__delivery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__sales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__assurance {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__titel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white-color;
+    padding-top: 28px;
+    padding-bottom: 16px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: $white-color;
+  }
+}

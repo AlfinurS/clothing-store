@@ -1,0 +1,31 @@
+
+.header {
+  background-color: $black-color;
+  min-height: 72px;
+  &__container {
+    padding-top: 18px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    background-color: $black-color;
+    border: none;
+  }
+  &__menu-list {
+    display: flex;
+    align-items: center;
+  }
+  &__menu-item {
+    margin-right: 33px;
+  }
+  &__menu-item :not(:last-of-type) {
+    margin-left: 33px;
+    }
+  &__search {
+    padding-left: 40px;
+  }
+}
