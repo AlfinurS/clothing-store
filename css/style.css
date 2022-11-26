@@ -38,6 +38,8 @@ ol, ul {
 a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+  display: block;
+  line-height: 0px;
 }
 
 * {
