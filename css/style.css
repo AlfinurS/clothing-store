@@ -44,66 +44,69 @@ a {
   font-family: "Lato", sans-serif;
 }
 
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+body {
+  margin: 0 auto;
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1600px;
-  width: 100%;
 }
 
 .header {
   background-color: #222;
   min-height: 72px;
 }
-
 .header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 18px;
-  padding-left: 230px;
-  padding-right: 230px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
-
+.header__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
 .header__button {
   background-color: #222;
   border: none;
 }
-
 .header__menu-list {
-  list-style-type: none;
   display: flex;
   align-items: center;
-  padding-left: 440px;
 }
-
 .header__menu-item {
   margin-right: 33px;
 }
-
-.header__button {
+.header__menu-item :not(:last-of-type) {
   margin-left: 33px;
+}
+.header__search {
+  padding-left: 40px;
 }
 
 .promo {
   display: flex;
 }
+.promo__picture {
+  width: 50%;
+  height: auto;
+}
 .promo__content {
   width: 50%;
-}
-.promo__content--right {
   background-color: #F1E4E6;
-}
-.promo__content-picture {
-  width: 100%;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
 .promo__content-headline {
   position: relative;
+}
+.promo__content-headline::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 100%;
+  background-color: #F16D7F;
+  left: -28px;
 }
 .promo__content-titel {
   font-size: 48px;
@@ -112,16 +115,7 @@ a {
   text-transform: uppercase;
   color: #222;
 }
-.promo__content-headline::before {
-  position: absolute;
-  content: "";
-  width: 12px;
-  height: 100%;
-  background-color: #F16D7F;
-  left: -20px;
-}
 .promo__content-all {
-  padding-top: 335px;
   padding-left: 92px;
 }
 .promo__text {
@@ -137,38 +131,18 @@ a {
 
 .stock {
   margin-top: 63px;
-  margin-right: 230px;
-  margin-left: 230px;
   margin-bottom: 98px;
-}
-.stock__women {
-  background-image: url(../img/banner_mini1.png);
-  width: 100%;
-  height: 260px;
-}
-.stock__men {
-  background-image: url(../img/banner_mini2.png);
-  width: 100%;
-  height: 260px;
-}
-.stock__kids {
-  background-image: url(../img/banner_mini3.png);
-  width: 100%;
-  height: 260px;
-}
-.stock__accesories {
-  grid-column: 1/4;
-  background-image: url(../img/banner.png);
-  width: 100%;
-  height: 180px;
-  margin-top: 30px;
 }
 .stock__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
-.stock__item {
+.stock__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.stock__card {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -178,6 +152,23 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 260px;
+}
+.stock__card--women {
+  background-image: url(../img/banner_mini1.png);
+}
+.stock__card--men {
+  background-image: url(../img/banner_mini2.png);
+}
+.stock__card--kids {
+  background-image: url(../img/banner_mini3.png);
+}
+.stock__card--accesories {
+  grid-column: 1/4;
+  background-image: url(../img/banner.png);
+  width: 100%;
+  height: 180px;
 }
 .stock__pink {
   padding-top: 10px;
@@ -188,9 +179,10 @@ a {
 }
 
 .catalog {
-  margin-right: 230px;
-  margin-left: 230px;
-  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px;
 }
 .catalog__item {
   background-color: #F8F8F8;
@@ -205,7 +197,7 @@ a {
   max-width: 360px;
   margin-top: 25px;
   padding-left: 16px;
-  padding-right: 28px;
+  padding-right: 16px;
   padding-bottom: 20px;
 }
 .catalog__content-name {
@@ -250,36 +242,42 @@ a {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 48px;
   color: #F16D7F;
   border: 1px solid #F16D7F;
-  max-width: 211px;
-  min-height: 47px;
-  margin-left: 460px;
+  width: 212px;
   margin-top: 48px;
 }
 
 .advantage {
   background-color: #222;
-  max-height: 340px;
+  display: flex;
+  justify-content: center;
 }
 .advantage__wrapp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 72px;
-  margin-left: 230px;
-  margin-right: 230px;
-  padding-top: 103px;
-  min-height: 230px;
+  min-height: 340px;
+  max-width: 1140px;
 }
 .advantage__delivery {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .advantage__sales {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .advantage__assurance {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .advantage__titel {
   font-weight: 400;
@@ -297,12 +295,15 @@ a {
   color: #FFF;
 }
 
-.footer__subscribe {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 448px;
+.footer__container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.footer__wrapper {
   background-image: url(../img/banner_footer.png);
+  display: flex;
+  align-items: center;
+  min-height: 448px;
 }
 .footer__content {
   width: 50%;
@@ -311,7 +312,6 @@ a {
 .footer__content-wrap {
   max-width: 360px;
   padding-left: 230px;
-  padding-top: 97px;
 }
 .footer__foto {
   padding-bottom: 30px;
@@ -326,7 +326,6 @@ a {
 .footer__sub {
   width: 50%;
   text-align: center;
-  padding-top: 150px;
 }
 .footer__titel {
   font-weight: 700;
@@ -349,11 +348,11 @@ a {
   justify-content: space-between;
   transition-duration: 0.2s;
   max-width: 330px;
-  margin-left: 234px;
+  margin-left: 224px;
 }
 .footer__email {
   padding-left: 24px;
-  padding-right: 68px;
+  padding-right: 78px;
   border: none;
   background-color: #F8F8F8;
   border-radius: 25px 0 0 25px;
@@ -377,13 +376,15 @@ a {
   font-size: 16px;
   line-height: 19px;
 }
+.footer__holder-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  min-height: 80px;
+}
 .footer__holder-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 80px;
-  padding-left: 230px;
-  padding-right: 230px;
+  padding-top: 24px;
 }
 .footer__list {
   display: flex;

@@ -1,47 +1,14 @@
-.advantage {
-  background-color: $black-color;
-  max-height: 340px;
-  &__wrapp {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 72px;
-    margin-left: 230px;
-    margin-right: 230px;
-    padding-top: 103px;
-    min-height: 230px;
-  }
-  &__delivery {
-    text-align: center;
-  }
-  &__sales {
-    text-align: center;
-  }
-  &__assurance {
-    text-align: center;
-  }
-  &__titel {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: $white-color;
-    padding-top: 28px;
-    padding-bottom: 16px;
-  }
-  &__text {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 17px;
-    text-align: center;
-    color: $white-color;
-  }
-}
 .footer  {
-  &__subscribe {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 448px;
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
     background-image: url(../img/banner_footer.png);
+    display: flex;
+    align-items: center;
+    min-height: 448px;
   }
   &__content {
     width: 50%;
@@ -49,7 +16,6 @@
     &-wrap {
       max-width: 360px;
       padding-left: 230px;
-      padding-top: 97px;
     }
   }
   &__foto {
@@ -65,7 +31,6 @@
   &__sub {
     width: 50%;
     text-align: center;
-    padding-top: 150px;
   }
   &__titel {
     font-weight: 700;
@@ -88,11 +53,11 @@
     justify-content: space-between;
     transition-duration: 0.2s;
     max-width: 330px;
-    margin-left: 234px;
+    margin-left: 224px;
   }
   &__email {
     padding-left: 24px;
-    padding-right: 68px;
+    padding-right: 78px;
     border: none;
     background-color: $grey_bg-color;
     border-radius: 25px 0 0 25px;
@@ -115,13 +80,15 @@
       font-size: 16px;
       line-height: 19px;
     }
+    &-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      min-height: 80px;
+    }
     &-wrapper {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      min-height: 80px;
-      padding-left: 230px;
-      padding-right: 230px;
+      padding-top: 24px;
     }
   }
   &__list {
