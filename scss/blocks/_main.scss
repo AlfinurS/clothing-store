@@ -1,15 +1,26 @@
 .promo {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  padding-bottom: 50%;
+  &__wrapp {
   display: flex;
-
+  }
   &__picture {
-    width: 50%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
   }
   &__content {
     width: 50%;
     background-color: $pink-color;
     display: flex;
     align-items: center;
+
     &-headline {
       position: relative;
     }
@@ -57,6 +68,8 @@
     margin: 0 auto;
   }
   &__card {
+    position: relative;
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -66,23 +79,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 260px;
-    &--women {
-      background-image: url(../img/banner_mini1.png);
-    }
-    &--men {
-      background-image: url(../img/banner_mini2.png);
-    }
-    &--kids {
-      background-image: url(../img/banner_mini3.png);
-    }
     &--accesories {
     grid-column: 1/4;
-    background-image: url(../img/banner.png);
-    width: 100%;
-    height: 180px;
+    }
   }
+  &__content {
+    position: absolute;
+    text-align: center;
+  }
+  &__item-link {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+  &__link-accesories {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 20%;
+  }
+  &__image { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1;
   }
   &__pink {
     padding-top: 10px;
