@@ -87,11 +87,24 @@ body {
 }
 
 .promo {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  padding-bottom: 50%;
+}
+.promo__wrapp {
   display: flex;
 }
 .promo__picture {
-  width: 50%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .promo__content {
   width: 50%;
@@ -145,6 +158,8 @@ body {
   margin: 0 auto;
 }
 .stock__card {
+  position: relative;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -154,23 +169,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 260px;
 }
-.stock__card--women {
-  background-image: url(../img/banner_mini1.png);
-}
-.stock__card--men {
-  background-image: url(../img/banner_mini2.png);
-}
-.stock__card--kids {
-  background-image: url(../img/banner_mini3.png);
-}
-.stock__card--accesories {
+.stock__card--wide {
   grid-column: 1/4;
-  background-image: url(../img/banner.png);
+}
+.stock__content {
+  position: absolute;
+  text-align: center;
+}
+.stock__item-link {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 180px;
+  padding-bottom: 100%;
+}
+.stock__link-wide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 20%;
+}
+.stock__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 .stock__pink {
   padding-top: 10px;
