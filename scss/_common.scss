@@ -8,3 +8,35 @@ body {
   margin: 0 auto;
   max-width: 1600px;
 }
+
+.btn-plain {
+  border: 1px solid $white-color;
+  background: transparent;
+  font-size: 14px;
+  color: $white-color;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  &-icon {
+    padding-right: 11px;
+  }
+}
+.btn-primary {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: $pink_text-color;
+  border: 1px solid $pink_text-color;
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-top: 48px;
+}
+.btn-primary:hover {
+  color: $white-color;
+  background-color: $pink_text-color;
+}
