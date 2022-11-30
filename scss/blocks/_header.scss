@@ -14,6 +14,7 @@
   &__button {
     background-color: $black-color;
     border: none;
+    cursor: pointer;
   }
   &__menu-list {
     display: flex;

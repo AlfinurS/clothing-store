@@ -105,6 +105,7 @@ body {
 .header__button {
   background-color: #222;
   border: none;
+  cursor: pointer;
 }
 .header__menu-list {
   display: flex;
@@ -451,6 +452,7 @@ body {
   line-height: 17px;
   border: none;
   white-space: nowrap;
+  cursor: pointer;
 }
 .goods__button-text {
   margin-right: 10px;
@@ -531,6 +533,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #F1E4E6;
+  cursor: pointer;
 }
 .footer__holder {
   background-color: #222;
