@@ -55,6 +55,55 @@ body {
   max-width: 1600px;
 }
 
+.btn-plain {
+  border: 1px solid #FFF;
+  background: transparent;
+  font-size: 14px;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.btn-plain-icon {
+  padding-right: 11px;
+}
+.btn-plain-text {
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.btn-plain:hover {
+  opacity: 0.7;
+}
+
+.btn-primary {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  white-space: nowrap;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  padding-left: 39px;
+  padding-right: 39px;
+  margin-top: 48px;
+  transition-duration: 0.3s;
+}
+
+.btn-primary:hover {
+  color: rgba(255, 250, 250, 0.85);
+  background-color: #F16D7F;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
 .header {
   background-color: #222;
   min-height: 72px;
@@ -71,6 +120,7 @@ body {
 .header__button {
   background-color: #222;
   border: none;
+  cursor: pointer;
 }
 .header__menu-list {
   display: flex;
@@ -85,15 +135,21 @@ body {
 .header__search {
   padding-left: 40px;
 }
+.header__logo {
+  display: flex;
+}
+.header__logo-link {
+  padding-bottom: 14px;
+}
 
 .promo {
+  display: flex;
+}
+.promo__wrapp {
   position: relative;
   overflow: hidden;
   width: 50%;
   padding-bottom: 50%;
-}
-.promo__wrapp {
-  display: flex;
 }
 .promo__picture {
   position: absolute;
@@ -169,6 +225,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.2s;
+}
+.stock__card:hover .stock__content {
+  opacity: 0.7;
 }
 .stock__card--wide {
   grid-column: 1/4;
@@ -231,6 +291,25 @@ body {
   padding-bottom: 120%;
   overflow: hidden;
 }
+.catalog__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.2s;
+}
+.catalog__hover:hover .catalog__add-wrapper {
+  display: flex;
+}
+.catalog__add-wrapper {
+  width: 100%;
+  height: 98%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 0.7);
+}
 .catalog__image-wrapper {
   position: absolute;
   top: 50%;
@@ -238,6 +317,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  transition-duration: 0.2s;
 }
 .catalog__image {
   max-width: 100%;
@@ -345,6 +425,73 @@ body {
   color: #FFF;
 }
 
+.navigation {
+  background-color: #F8F3F4;
+}
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  min-height: 148px;
+  margin: 0 auto;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navigation__item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.navigation__link {
+  color: #636363;
+  margin: 0 2px 0 2px;
+}
+.navigation__link:hover {
+  opacity: 0.7;
+}
+.navigation__link--active {
+  font-weight: 700;
+  color: #F16D7F;
+}
+.navigation__titel {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.goods {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.goods__container {
+  margin-top: 50px;
+}
+.goods__button-filter {
+  background-color: white;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.goods__button-text {
+  margin-right: 10px;
+}
+.goods__card {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
 .footer__container {
   max-width: 1600px;
   margin: 0 auto;
@@ -403,19 +550,35 @@ body {
 .footer__email {
   padding-left: 24px;
   padding-right: 78px;
-  border: none;
   background-color: #F8F8F8;
+  border: 1px solid #F8F8F8;
   border-radius: 25px 0 0 25px;
+  border: 1px solid transparent;
+  transition-duration: 0.2s;
+}
+.footer__email:focus-visible {
+  border: 1px solid #F16D7F;
+  outline: transparent;
+}
+.footer__email:hover {
+  border: 1px solid #F16D7F;
 }
 .footer__button {
   min-width: 100px;
   border-radius: 0 25px 25px 0;
-  border: none;
+  border: 1px solid #F16D7F;
   background-color: #F16D7F;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #F1E4E6;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.footer__button:hover {
+  color: #F16D7F;
+  background-color: #FFF;
+  border: 1px solid #F16D7F;
 }
 .footer__holder {
   background-color: #222;

@@ -58,19 +58,35 @@
   &__email {
     padding-left: 24px;
     padding-right: 78px;
-    border: none;
     background-color: $grey_bg-color;
+    border: 1px solid $grey_bg-color;
     border-radius: 25px 0 0 25px;
+    border: 1px solid transparent;
+    transition-duration: 0.2s;
+    &:focus-visible {
+      border: 1px solid $pink_text-color;
+      outline: transparent;
+    }
+    &:hover {
+      border: 1px solid $pink_text-color;
+    }
   }
   &__button {
     min-width: 100px;
     border-radius: 0 25px 25px 0;
-    border: none;
-    background-color:$pink_text-color;
+    border: 1px solid $pink_text-color;
+    background-color: $pink_text-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: $pink-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: $pink_text-color;
+      background-color: $white-color;
+      border: 1px solid $pink_text-color;
+    } 
   }
   &__holder {
     background-color: $black-color;

@@ -1,10 +1,10 @@
 .promo {
+  display: flex;
+  &__wrapp {
   position: relative;
   overflow: hidden;
   width: 50%;
   padding-bottom: 50%;
-  &__wrapp {
-  display: flex;
   }
   &__picture {
     position: absolute;
@@ -79,6 +79,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.2s;
+    &:hover .stock__content {
+      opacity: 0.7;
+      }
     &--wide {
     grid-column: 1/4;
     }
@@ -92,7 +96,7 @@
     overflow: hidden;
     width: 100%;
     padding-bottom: 100%;
-  }
+    }
   &__link-wide {
     position: relative;
     overflow: hidden;
@@ -132,12 +136,33 @@
   &__item {
     background-color: $grey_bg-color;
   }
+
   &__item-wrapper {
     position: relative;
     width: 100%;
     padding-bottom: 120%;
     overflow: hidden;
   }
+  &__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.2s;
+    &:hover .catalog__add-wrapper {
+      display: flex;
+    }
+  }
+  &__add-wrapper {
+    width: 100%;
+    height: 98%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 33, 33, 0.7);
+  }
+  
   &__image-wrapper {
     position: absolute;
     top: 50%;
@@ -145,6 +170,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
+    transition-duration: 0.2s;
   }
   &__image {
     max-width: 100%;
