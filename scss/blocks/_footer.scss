@@ -58,9 +58,14 @@
   &__email {
     padding-left: 24px;
     padding-right: 78px;
-    border: none;
     background-color: $grey_bg-color;
     border-radius: 25px 0 0 25px;
+    border: 1px solid transparent;
+    transition-duration: 0.2s;
+  }
+  &__email:focus-visible {
+    border-color: rgba(241, 109, 127, 0.7);
+    outline: transparent;
   }
   &__button {
     min-width: 100px;
@@ -73,6 +78,11 @@
     color: $pink-color;
     cursor: pointer;
   }
+.fotter__button:hover {
+  color: $pink_text-color;
+  background-color: $white-color;
+} 
+
   &__holder {
     background-color: $black-color;
     &-text {

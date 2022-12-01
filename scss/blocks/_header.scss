@@ -29,4 +29,10 @@
   &__search {
     padding-left: 40px;
   }
+  &__logo {
+    display: flex;
+    &-link {
+      padding-bottom: 14px;
+    }
+  }
 }
