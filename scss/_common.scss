@@ -4,6 +4,18 @@
 body {
   margin: 0 auto;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #898989;
+  border-radius: 12px;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+body::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 1px 1px 6px #f3faf7;
+}
 .container {
   margin: 0 auto;
   max-width: 1600px;
@@ -42,14 +54,13 @@ body {
   white-space: nowrap;
   color: $pink_text-color;
   border: 1px solid $pink_text-color;
-  padding-left: 39px;
-  padding-right: 39px;
-  margin-top: 48px;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 .btn-primary:hover {
   color: $pink-color-light;
   background-color: $pink_text-color;
+  transition-duration: 0.3s;
 }
 .link:hover {
   opacity: 0.7;
@@ -63,13 +74,15 @@ body {
     width: 100%;
     min-height: 45px;
     border: 1px solid $grey-color;
+    transition-duration: 0.3s;
     &:hover {
-      border: 1px solid #F16D7F;
+      border: 1px solid $pink_text-color;
     }
     &:focus-visible {
+      border: 1px solid $pink_text-color;
       outline: transparent;
     }
-    }
+  }
   &__fieldest {
     border: 0;
     font-size: 100%;

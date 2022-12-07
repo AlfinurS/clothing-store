@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 96px;
+    margin-bottom: 128px;
   }
   &__item {
     position: relative;
@@ -60,7 +61,7 @@
       line-height: 28px;
       text-transform: uppercase;
       color: $black-color;
-      width: 68%;
+      margin-right: 20px;
     }
     &-text {
       margin-top: 12px;
@@ -112,6 +113,7 @@
   &__buttons-wrapp {
     display: flex;
     justify-content: space-between;
+    margin-top: 72px;
   }
   &__buttons-shop {
     color: $black-color;
@@ -134,7 +136,6 @@
       padding: 48px;
       background-color: $grey_color-cart;
       max-width: 360px;
-      min-height: 214px;
       margin-top: 64px;
       }
   &-container {
@@ -168,7 +169,8 @@
   &__text-wrapp--end {
     padding-bottom: 20px;
   }
-  &__btn-primary {
+  &__submit {
+    margin-top: 17px;
     padding-left: 42px;
     padding-right: 42px;
     text-transform: uppercase;
