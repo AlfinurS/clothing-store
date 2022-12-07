@@ -10,3 +10,9 @@ a {
   display: block;
   line-height: 0px;
 }
+input {
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
