@@ -1,14 +1,14 @@
 .footer  {
   &__container {
-    max-width: 1600px;
-    margin-left: 16px;
-    margin-right: 16px;
     @media (min-width: 1200px) {
+      max-width: 1600px;
       margin: 0 auto;
     }
   }
 
   &__wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
     background-image: url(../img/bg-footer-tablet.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -52,6 +52,13 @@
     line-height: 24px;
     text-align: center;
     color: $black-color;
+    width: 90%;
+    @media (min-width: 768px) {
+      width: 90%;
+    }
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
   }
   &__sub {
     display: flex;
@@ -84,17 +91,19 @@
     display: flex;
     justify-content: space-between;
     transition-duration: 0.2s;
-    max-width: 330px;
   
   }
   &__email {
     padding-left: 24px;
-    padding-right: 78px;
+    padding-right: 24px;
     background-color: $grey_bg-color;
     border: 1px solid $grey_bg-color;
     border-radius: 25px 0 0 25px;
     border: 1px solid transparent;
     transition-duration: 0.2s;
+    @media (min-width: 375px) {
+      min-width: 256px;
+    }
     &:focus-visible {
       border: 1px solid $pink_text-color;
       outline: transparent;
@@ -127,6 +136,16 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
+      order: 2;
+      padding-top: 40px;
+      @media (min-width: 768px) {
+        order: 1px;
+        padding-top: 0px;
+      }
+      @media (min-width: 1200px) {
+        order: 1px;
+        padding-top: 0px;
+      }
     }
     &-container {
       max-width: 1140px;
@@ -139,12 +158,33 @@
     }
     &-wrapper {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
       padding-top: 24px;
+      padding-bottom: 16px;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 24px;
+      }
+      @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 24px;
+      }
     }
   }
   &__list {
     display: flex;
+    order: 1;
+    @media (min-width: 768px) {
+      order: 2;
+    }
+    @media (min-width: 1200px) {
+      order: 2;
+    }
   }
   &__item:not(:last-of-type) {
     margin:0 7px 0 0;
