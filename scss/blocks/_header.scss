@@ -5,7 +5,11 @@
   &__container {
     padding-top: 18px;
     max-width: 1140px;
-    margin: 0 auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    @media (min-width: 1200px) {
+      margin: 0 auto;
+    }
   }
   &__wrapp {
     display: flex;
