@@ -1,21 +1,46 @@
 .footer  {
   &__container {
     max-width: 1600px;
-    margin: 0 auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    @media (min-width: 1200px) {
+      margin: 0 auto;
+    }
   }
 
   &__wrapper {
-    background-image: url(../img/banner_footer.png);
-    display: flex;
-    align-items: center;
-    min-height: 448px;
+    background-image: url(../img/bg-footer-tablet.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    @media (min-width: 768px)  {
+      background-image: url(../img/banner_footer.png);
+      max-height: 448px;
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      min-height: 448px;
+      background-image: url(../img/banner_footer.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
   }
   &__content {
-    width: 50%;
-    text-align: center;
-    &-wrap {
-      max-width: 360px;
-      padding-left: 230px;
+    @media (min-width: 1200px) {
+      width: 50%;
+      text-align: center;
+    }
+
+    &-wrap {    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 64px;
+      @media (min-width: 1200px) {
+        max-width: 360px;
+        padding-left: 230px;
+        padding-top: 0;
+      }
     }
   }
   &__foto {
@@ -29,8 +54,15 @@
     color: $black-color;
   }
   &__sub {
-    width: 50%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 100px;
+    @media (min-width: 1200px) {
+      width: 50%;
+      text-align: center;
+    }
   }
   &__titel {
     font-weight: 700;
@@ -53,7 +85,7 @@
     justify-content: space-between;
     transition-duration: 0.2s;
     max-width: 330px;
-    margin-left: 224px;
+  
   }
   &__email {
     padding-left: 24px;
@@ -98,8 +130,12 @@
     }
     &-container {
       max-width: 1140px;
-      margin: 0 auto;
+      margin-left: 16px;
+      margin-right: 16px;
       min-height: 80px;
+      @media (min-width: 1200px) {
+        margin: 0 auto;
+      }
     }
     &-wrapper {
       display: flex;
