@@ -24,6 +24,9 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 auto;
   }
 }
+.wrapper {
+  margin: 0 auto;
+}
 
 .btn-plain {
   border: 1px solid $white-color;
@@ -70,6 +73,13 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0.7;
 }
 .form {
+    width: 100%;
+  @media (min-width: 768px) {
+    min-width: 360px;
+  }
+  @media (min-width: 1200px) {
+
+  }
   &__input {
     font-weight: 300;
     font-size: 13px;

@@ -30,6 +30,11 @@
   &__menu-item :not(:last-of-type) {
     margin-left: 33px;
     }
+  &__item-hid {
+    @media (max-width: 768px) {
+      display: none;
+      }
+  }
   &__search {
     padding-left: 40px;
   }
