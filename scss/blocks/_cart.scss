@@ -8,13 +8,9 @@
     margin-bottom: 96px;
     @media (min-width: 768px) {
       margin-top: 60px;
-      margin-bottom: 128px;
       }  
     @media (min-width: 1100px) {
       margin-top: 96px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 128px;
       flex-direction: row;
       }
   }
@@ -50,7 +46,7 @@
       margin-bottom: 64px;  
     }
     @media (min-width: 1100px) {
-      margin-bottom: 40px;  
+      margin-bottom: 0px;  
     }
   }
   &__image-wrapper {
@@ -118,13 +114,10 @@
       color: $black-color;
       margin-right: 40px;
       @media (min-width: 768px) {
-        font-weight: 400;
         font-size: 24px;
         line-height: 29px;
       }
       @media (min-width: 1100px) {
-        font-size: 24px;
-        font-weight: 400;
         line-height: 28px;
       }
     }
@@ -135,10 +128,6 @@
       line-height: 17px;
       color: $black-color;
       @media (min-width: 768px) {
-        font-size: 22px;
-        line-height: 26px;
-      }
-      @media (min-width: 1100px) {
         font-size: 22px;
         line-height: 26px;
       }
@@ -153,10 +142,6 @@
         font-size: 22px;
         line-height: 26px;
       }
-      @media (min-width: 1100px) {
-        font-size: 22px;
-        line-height: 26px;
-      }
     }
     &-pink {
       margin-top: 12px;
@@ -166,10 +151,6 @@
       text-transform: uppercase;
       color: $pink_text-color;
       @media (min-width: 768px) {
-        font-size: 22px;
-        line-height: 26px;
-      }
-      @media (min-width: 1100px) {
         font-size: 22px;
         line-height: 26px;
       }
@@ -234,10 +215,6 @@
       padding-bottom: 17px;
       }
       @media (min-width: 1100px) {
-        padding-left: 39px;
-        padding-right: 39px;
-        padding-top: 17px;
-        padding-bottom: 17px;
         text-transform: uppercase;
         font-weight: 300;
         font-size: 14px;
@@ -250,19 +227,19 @@
     align-items: flex-end;
     width: 100%;
     &-wrapp {
-      padding: 48px;
+      padding: 42px;
       background-color: $grey_color-cart;
       margin-top: 48px;
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      box-sizing: border-box;
       @media (min-width: 768px) {
         align-items: flex-end;
         margin-top: 36px;
         margin-left: 15px;
-        width: 100%;
-        display: flex;
+        width: 50%;
         flex-direction: column;
       }
       @media (min-width: 1100px) {

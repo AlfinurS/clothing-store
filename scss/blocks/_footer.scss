@@ -12,9 +12,9 @@
     background-image: url(../img/bg-footer-tablet.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-color: $grey-background;
     @media (min-width: 768px)  {
       background-image: url(../img/banner_footer.png);
-      max-height: 448px;
     }
     @media (min-width: 1200px) {
       display: flex;
@@ -25,20 +25,26 @@
       background-repeat: no-repeat;
     }
   }
-  &__content {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
     @media (min-width: 1200px) {
-      width: 50%;
-      text-align: center;
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    &-wrap {    
+  }
+  &__content {
+    &-wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 64px;
+      max-width: 360px;
       @media (min-width: 1200px) {
-        max-width: 360px;
-        padding-left: 230px;
         padding-top: 0;
       }
     }
@@ -68,8 +74,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-  
   }
   &__titel {
     font-weight: 700;
