@@ -720,6 +720,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (min-width: 768px) {
   .cart__wrapper {
     margin-top: 60px;
+    margin-bottom: 128px;
   }
 }
 @media (min-width: 1100px) {
@@ -802,14 +803,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media (min-width: 768px) {
   .cart__form-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 @media (min-width: 1100px) {
   .cart__form-container {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
