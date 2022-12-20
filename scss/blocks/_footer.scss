@@ -1,5 +1,5 @@
 .footer  {
-  &__container {
+  &__box {
     @media (min-width: 1200px) {
       max-width: 1600px;
       margin: 0 auto;
@@ -175,7 +175,7 @@
         padding-top: 0px;
       }
     }
-    &-container {
+    &-box {
       max-width: 1140px;
       margin-left: 16px;
       margin-right: 16px;

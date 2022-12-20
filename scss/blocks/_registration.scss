@@ -20,6 +20,7 @@
   
   &__form {
     width: 100%;
+    max-width: 360px;
     @media (min-width: 768px) {
       padding-right: 22px;
       width: 50%;
@@ -27,6 +28,7 @@
     @media (min-width: 1200px) {
       padding-right: 0 px;
       width: 50%;
+      max-width: 360px;
     }
     &-text {
       font-weight: 300;
@@ -58,6 +60,7 @@
     }
     @media (min-width: 1200px) {
       width: 50%;
+      margin-top: 0px;
     }
   }
   &__label {

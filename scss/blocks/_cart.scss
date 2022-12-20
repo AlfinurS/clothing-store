@@ -17,6 +17,8 @@
   }
   &__list {
     width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
   }
   &__item {
     position: relative;
@@ -68,7 +70,7 @@
     object-fit: cover;
   }
   &__form {
-    &-container {
+    &-box {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -247,7 +249,7 @@
         margin-left: 0px;
       }
     }
-  &-container {
+  &-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

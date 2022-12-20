@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop THE BRAND</title>
+  <title>Men collectin</title>
   <link rel="icon" type="image/png" href="img/favicon.ico" sizes="36x36">
   <link rel="stylesheet" href="css/style.css">
   <link href="./dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <div class="header__box">
       <div class="header__wrapp">
         <div class="header__logo">
-          <a class="header__logo-link" href="/index.html"><img src="img/svg/logo.svg" alt="logo" width="44" height="38"></a>
+          <a class="header__logo-link" href=".index.html"><img src="img/svg/logo.svg" alt="logo" width="44" height="38"></a>
           <button class="header__button header__item-hid">
             <img class="header__search" src="img/svg/search.svg" alt="search" width="27" height="28">
           </button>
@@ -78,70 +78,96 @@
   </header>
   <div>
     <main>
-      <section>
-        <div class="promo">
-          <a href="./catalog.html" class="promo__wrapp">
-            <img class="promo__picture" src="./img/man-in-jacket.jpg" alt="man" width="800" height="765"></a><div class="promo__content">
-            <div class="promo__content-all">
-                <div class="promo__content-headline">
-                  <h2 class="promo__content-titel">the brand</h2>
-                  <span class="promo__text">of luxerious</span>
-                  <span class="promo__text promo__text--pink">fashion</span>
-                </div> 
+      <section class="navigation">
+        <div class="navigation__wrapper">
+          <h2 class="navigation__titel">new arrivals</h2>
+          <nav>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link" href="./index.html">home /</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">men /</a></li>
+              <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">new arrivals</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <div class="carousel__wrap">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="bd-placeholder-img" src="./img/new_product/1ma4c0lx.bpq_IMG_02_2110088548689.webp" alt="man coat" width="100%" height="100%">
             </div>
+            <div class="carousel-item">
+              <img class="bd-placeholder-img" src="./img/new_product/mf0tva5z.ujg_IMG_03_2110090682173.webp" alt="man coat" width="100%" height="100%">
+            </div>
+            <div class="carousel-item">
+              <img class="bd-placeholder-img" src="./img/new_product/1ma4c0lx.bpq_IMG_02_2110088548689.webp" alt="man coat" width="100%" height="100%">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section>
+        <div class="description__wrapper">
+          <div class="description">
+            <div class="description__border-wrap">
+              <div class="description__title-content">
+                <h2 class="description__title-pink">men collection</h2>
+              </div>
+              <h2 class="description__title">moschino cheap and chic</h2>
+              <p class="description__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+              <p class="description__price">$561</p>
+            </div>
+            <div class="description__dropdown">
+              <div class="dropdown dropdown-center">
+                <a class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split description__drop-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  choose color
+                </a>
+                <ul class="dropdown-menu dropdown-menu-sm-end">
+                  <li><a class="dropdown-item p-3" href="#">Black</a></li>
+                  <li><a class="dropdown-item p-3" href="#">Blue</a></li>
+                </ul>
+              </div>
+              <div class="dropdown dropdown-center">
+                <a class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split description__drop-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  choose size
+                </a>
+                <ul class="dropdown-menu dropdown-menu-sm-end fs-6">
+                  <li><a class="dropdown-item p-3" href="#">M</a></li>
+                  <li><a class="dropdown-item p-3" href="#">L</a></li>
+                  <li><a class="dropdown-item p-3" href="#">XL</a></li>
+                </ul>
+              </div>
+              <div class="dropdown dropdown-center">
+                <a class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split description__drop-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  quantity
+                </a>
+                <ul class="dropdown-menu dropdown-menu-sm-end">
+                  <li><a class="dropdown-item p-3" href="#">1</a></li>
+                  <li><a class="dropdown-item p-3" href="#">2</a></li>
+                  <li><a class="dropdown-item p-3" href="#">3</a></li>
+                  <li><a class="dropdown-item p-3" href="#">4</a></li>
+                </ul>
+              </div>
+            </div>
+            <button class="description__button-add btn-primary">
+              <span class="btn-plain-text">Add to Cart</span>
+            </button>
           </div>
         </div>
       </section>
-      <div class="stock box">
-        <div class="stock__box">
-          <ul class="stock__list">
-            <li class="stock__card">
-                <div class="stock__content">
-                  <p class="stock__text">30% OFF</p>
-                  <p class="stock__pink">for women</p>
-                </div>
-                <a href="#" class="stock__item-link">
-                  <img class="stock__image" src="./img/banner_mini1.png" alt="man" width="360" height="260">
-                </a>
-            </li>
-            <li class="stock__card">
-                <div class="stock__content">
-                  <p class="stock__text">hot deal</p>
-                  <p class="stock__pink">for men</p>
-                </div>
-                <a href="#" class="stock__item-link">
-                  <img class="stock__image" src="./img/banner_mini2.png" alt="man" width="360" height="260">
-                </a>
-            </li>
-            <li class="stock__card">
-              <div class="stock__content">
-                <p class="stock__text">new arrivals</p>
-                <p class="stock__pink">for kids</p>
-              </div>
-              <a href="#" class="stock__item-link">
-                <img class="stock__image" src="./img/banner_mini3.png" alt="man" width="360" height="260">
-              </a>
-            </li>
-            <li class="stock__card stock__card--wide">
-              <div class="stock__content">
-                <p class="stock__text">luxirous & trendy</p>
-                <p class="stock__pink">accesories</p>
-              </div>
-              <a href="#" class="stock__link-wide">
-                <picture class="">
-                  <source srcset="./img/banner_small.jpg" media="(max-width: 1199px)">
-                  <source srcset="./img/banner.png" media="(min-width: 1200px)">
-                  <img class="stock__image"
-                    src="./img/banner.png" alt="man">
-                </picture>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="catalog box">
-        <h2 class="catalog__headline">Fetured Items</h2>
-        <p class="catalog__text">Shop for items based on what we featured in this week</p>
+      <div class="catalog box">
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
@@ -197,86 +223,11 @@
               <p class="catalog__content-price">$52.00</p>
             </div>
           </li>
-          <li class="catalog__item">
-            <div class="catalog__item-wrapper">
-              <img class="catalog__image" src="./img/product/product4.png" alt="product">
-              <div class="catalog__hover">
-                <div class="catalog__add-wrapper">
-                  <button class="btn-plain">
-                    <img class="btn-plain-icon" src="img/svg/bag2.svg" alt="bag" width="24" height="24">
-                    <span class="btn-plain-text">Add to Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="catalog__content">
-              <p class="catalog__content-name">ellery x m'o capsule</p>
-              <p class="catalog__content-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="catalog__content-price">$52.00</p>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__item-wrapper">
-              <img class="catalog__image" src="./img/product/product5.png" alt="product">
-              <div class="catalog__hover">
-                <div class="catalog__add-wrapper">
-                  <button class="btn-plain">
-                    <img class="btn-plain-icon" src="img/svg/bag2.svg" alt="bag" width="24" height="24">
-                    <span class="btn-plain-text">Add to Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="catalog__content">
-              <p class="catalog__content-name">ellery x m'o capsule</p>
-              <p class="catalog__content-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="catalog__content-price">$52.00</p>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__item-wrapper">
-              <img class="catalog__image" src="./img/product/product6.png" alt="product">
-              <div class="catalog__hover">
-                <div class="catalog__add-wrapper">
-                  <button class="btn-plain">
-                    <img class="btn-plain-icon" src="img/svg/bag2.svg" alt="bag" width="24" height="24">
-                    <span class="btn-plain-text">Add to Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="catalog__content">
-              <p class="catalog__content-name">ellery x m'o capsule</p>
-              <p class="catalog__content-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-              <p class="catalog__content-price">$52.00</p>
-            </div>
-          </li>
         </ul>
-        <a class="btn-primary catalog__btn-more" href="catalog.html"><div>Browse All Product</div></a>
-      </section>
-      <section class="advantage">
-        <div class="advantage__wrapp">
-          <div class="advantage__delivery">
-            <img class="advantage__pic" src="./img/svg/icon1.svg" alt="delivery">
-            <h2 class="advantage__titel">Free Delivery</h2>
-            <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-          </div>
-          <div class="advantage__sales">
-            <img class="advantage__pic" src="./img/svg/icon2.svg" alt="sales">
-            <h2 class="advantage__titel">Sales & discounts</h2>
-            <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-          </div>
-          <div class="advantage__assurance">
-            <img class="advantage__pic" src="./img/svg/icon3.svg" alt="assurance">
-            <h2 class="advantage__titel">Quality assurance</h2>
-            <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
   </div>
-  <footer>
-  <section class="footer">
+  <footer class="footer">
     <div class="footer__box">
       <div class="footer__wrapper">
         <div class="footer__wrap">
@@ -322,7 +273,6 @@
         </div>
       </div>
     </div>
-  </section>
   </footer>
   <script src="./dist/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
