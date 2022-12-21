@@ -41,7 +41,7 @@
       content: '';
       width: 12px;
       height: 100%;
-      background-color: $pink_text-color;
+      background-color: $white-color;
       left: -18px;
       @media (min-width: 374px) {
         left: -28px;
@@ -90,7 +90,7 @@
       line-height: 38px;
     }
     &--pink {
-      color: $pink_text-color;
+      color: $white-color;
     }
   }
 }
