@@ -1,16 +1,35 @@
 .registration {
     max-width: 1140px;
-    margin: 0 auto;
   
   &__wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-top: 64px;
-    padding-bottom: 96px;
+    flex-direction: column;
+    margin-top: 40px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding-bottom: 96px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 0px;
+      padding-top: 64px;
+      padding-bottom: 96px;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
   
   &__form {
+    width: 100%;
     max-width: 360px;
+    @media (min-width: 768px) {
+      padding-right: 22px;
+      width: 50%;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 0 px;
+      width: 50%;
+      max-width: 360px;
+    }
     &-text {
       font-weight: 300;
       font-size: 13px;
@@ -33,7 +52,16 @@
     }
 }
   &__content {
-    width: 60%;
+    width: auto;
+    margin-top: 40px;
+    padding-bottom: 96px;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1200px) {
+      width: 50%;
+      margin-top: 0px;
+    }
   }
   &__label {
     &-name {
@@ -52,7 +80,6 @@
       align-items: center;
     }
   }
-
   &__btn {
     color: $white-color;
     background-color: $pink_text-color;
@@ -78,21 +105,45 @@
   }
   &__titel {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 19px;
     text-transform: uppercase;
-    padding-bottom: 22px;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 28px;
+}
   }
   &__text {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 19px;
     padding-bottom: 22px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
   &__list {
     font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 19px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
   &__item {
     padding-bottom: 16px;

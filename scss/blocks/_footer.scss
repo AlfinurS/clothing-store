@@ -1,5 +1,5 @@
 .footer  {
-  &__container {
+  &__box {
     @media (min-width: 1200px) {
       max-width: 1600px;
       margin: 0 auto;
@@ -12,9 +12,9 @@
     background-image: url(../img/bg-footer-tablet.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-color: $grey-background;
     @media (min-width: 768px)  {
       background-image: url(../img/banner_footer.png);
-      max-height: 448px;
     }
     @media (min-width: 1200px) {
       display: flex;
@@ -25,20 +25,26 @@
       background-repeat: no-repeat;
     }
   }
-  &__content {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
     @media (min-width: 1200px) {
-      width: 50%;
-      text-align: center;
+      flex-direction: row;
+      justify-content: space-between;
     }
-
-    &-wrap {    
+  }
+  &__content {
+    &-wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 64px;
+      max-width: 360px;
       @media (min-width: 1200px) {
-        max-width: 360px;
-        padding-left: 230px;
         padding-top: 0;
       }
     }
@@ -48,50 +54,72 @@
   }
   &__text {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
     color: $black-color;
     width: 90%;
     @media (min-width: 768px) {
       width: 90%;
+      font-size: 20px;
+      line-height: 24px;
     }
     @media (min-width: 1200px) {
       width: 100%;
+      font-size: 20px;
+      line-height: 24px;
     }
   }
   &__sub {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 48px;
-    padding-bottom: 100px;
-    @media (min-width: 1200px) {
-      width: 50%;
-      text-align: center;
-    }
   }
   &__titel {
     font-weight: 700;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 37px;
     text-align: center;
     color: $black-color;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    @media (min-width: 768px) {
+      line-height: 37px;
+      padding-top: 48px;
+    }
+    @media (min-width: 1200px) {
+      line-height: 40px;
+      padding-bottom: 0px;
+    }
   }
   &__headline {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 21px;
     text-align: center;
     padding-bottom: 32px;
     color: $black-color;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 29px;
+    }
   }
   &__form {
     min-height: 49px;
     display: flex;
     justify-content: space-between;
     transition-duration: 0.2s;
-  
+    padding-bottom: 140px;
+    @media (min-width: 768px) {
+      padding-bottom: 140px;
+    }
+    @media (min-width: 1200px) {
+      padding-bottom: 0px;
+    }
   }
   &__email {
     padding-left: 24px;
@@ -147,7 +175,7 @@
         padding-top: 0px;
       }
     }
-    &-container {
+    &-box {
       max-width: 1140px;
       margin-left: 16px;
       margin-right: 16px;

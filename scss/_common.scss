@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 1px 1px 6px #f3faf7;
 }
-.container {
+.box {
   max-width: 1600px;
   margin-left: 16px;
   margin-right: 16px;
@@ -24,7 +24,9 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 auto;
   }
 }
-
+.wrapper {
+  margin: 0 auto;
+}
 .btn-plain {
   border: 1px solid $white-color;
   background: transparent;
@@ -49,7 +51,6 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-plain:hover {
   opacity: 0.7;
 }
-
 .btn-primary {
   text-align: center;
   font-weight: 400;
@@ -70,6 +71,13 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0.7;
 }
 .form {
+    width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
   &__input {
     font-weight: 300;
     font-size: 13px;
@@ -116,6 +124,10 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-  } 
+  }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: transparent !important;
+  filter: invert(1) grayscale(100);
 }
 
