@@ -205,6 +205,31 @@ body::-webkit-scrollbar-thumb:hover {
   filter: invert(1) grayscale(100);
 }
 
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 .header {
   background-color: #222;
   min-height: 72px;
@@ -306,6 +331,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .promo {
   display: flex;
+  background-color: #D99092;
 }
 @media (min-width: 1200px) {
   .promo {
@@ -463,6 +489,8 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   transition-duration: 0.2s;
+  background-color: #9F9F9F;
+  z-index: -1;
 }
 .stock__card:hover .stock__content {
   opacity: 0.7;
